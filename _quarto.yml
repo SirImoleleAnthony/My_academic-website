@@ -1,0 +1,60 @@
+project:
+  type: website
+  resources:
+    - images/*
+    - files/*
+
+website:
+  title: "Godswill Imolele Anthony"
+  open-graph: true
+  twitter-card: true
+
+  navbar:
+    background: "#0b2a33"
+    pinned: true
+
+    left:
+      - href: index.qmd
+        text: Home
+
+      - href: research.qmd
+        text: Research
+
+      - href: projects.qmd
+        text: Projects
+
+      - href: publications.qmd
+        text: Publications
+
+      - href: experience.qmd
+        text: Experience
+
+      - href: about.qmd
+        text: About
+
+      - href: index.qmd#contact
+        text: Contact
+
+    right:
+      - icon: github
+        href: https://github.com/SirImoleleAnthony?tab=repositories
+
+      - icon: linkedin
+        href: https://www.linkedin.com/in/godswill-anthony-850639199
+
+  page-footer:
+    left: |
+      © 2026 Godswill Imolele Anthony
+
+    center: |
+      Bayesian AI • Antimicrobial Resistance • Drug Discovery
+
+    right: |
+      Built with Quarto
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    smooth-scroll: true
